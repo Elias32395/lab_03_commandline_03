@@ -98,6 +98,11 @@ baz.txt		foo.txt		my_files
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
+ent-v314-014:my_files student$ mv baz.txt qux.txt
+ent-v314-014:my_files student$ ls
+README.md	foo.txt		my_files	qux.txt
+ent-v314-014:my_files student$ 
+
 
 
 ==========
@@ -121,6 +126,8 @@ Write out the command that you used and what happened.
 Write out the command that you used and what happened.
 ----------
 
+ent-v314-014:mtec1003-lab-03 student$ rm my_files
+rm: my_files: is a directory
 
 
 ==========
@@ -131,6 +138,9 @@ Force the removal of the directory and files using the -rf flag
 $ rm -rf my_files
 ----------
 
+ent-v314-014:mtec1003-lab-03 student$ rm -rf my_files
+ent-v314-014:mtec1003-lab-03 student$ ls
+books	logs	web
 
 
 ==========
@@ -142,9 +152,13 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
+ent-v314-014:other student$ cat pg1232.txt
+The Project Gutenberg EBook of The Prince, by Nicolo Machiavelli
+
+This eBook is for the use of anyone anywhere at no cost and with……………….
 
 
-
+i put dots to show it was more text
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
 
@@ -154,6 +168,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+
+ent-v314-014:other student$ head pg1232.txt
+The Project Gutenberg EBook of The Prince, by Nicolo Machiavelli
 
 
 
@@ -167,7 +184,17 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below.
 ----------
 
+ent-v314-014:other student$ tail pg1232.txt
 
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 ==========
 19. Using the same file...
@@ -179,7 +206,7 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
 
-
+more pg1232.txt and it showed less and more 
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
