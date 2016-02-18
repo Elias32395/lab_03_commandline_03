@@ -213,19 +213,25 @@ more pg1232.txt and it showed less and more
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+some situations in which you would need these commands is when you are going to see a file and it is very long and you don't want to to see the whole thing also another
+situation is if you are shell scripting and when you want just a little bit of the text to show when a command is placed 
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
+52639
+V217-M04:other Guest$ wc pg1232.txt
+    5063   52639  305864 pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+5063
 
+V217-M04:other Guest$ wc -l pg1232.txt
+    5063 pg1232.txt
 
 ==========
 OPTIONAL
@@ -234,3 +240,12 @@ OPTIONAL
 
 Write the command that you used below.
 ----------
+V217-M04:other Guest$ cp *.txt ~
+V217-M04:other Guest$ ls
+pg1232.txt
+V217-M04:other Guest$ cd guest
+-bash: cd: guest: No such file or directory
+V217-M04:other Guest$ cd ~
+V217-M04:~ Guest$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	pg1232.txt
